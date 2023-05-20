@@ -1,5 +1,6 @@
 import random
 
+
 def get_choices():
     # get player choice, computer choice, and return a dictionary of values
     player_choice = input("Enter a choice (rock, paper, scissors): ")
@@ -7,8 +8,9 @@ def get_choices():
     options = ["rock", "paper", "scissors"]
     computer_choice = random.choice(options)
 
-    choices = {"player": player_choice, "computer": computer_choice,}
+    choices = {"player": player_choice, "computer": computer_choice}
     return choices
+
 
 def check_win(player, computer):
     # compare player and computer choices, return an explanatory string
